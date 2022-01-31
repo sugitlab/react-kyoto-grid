@@ -1,1 +1,1 @@
-export { default as Rkg } from './Rkg'
+export { default as Rkg } from './Rkg';
