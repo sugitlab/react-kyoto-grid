@@ -1,0 +1,31 @@
+{
+  "name": "react-kyoto-grid",
+  "version": "0.1.0",
+  "main": "./dist/rkg.umd.js",
+  "module": "./dist/rkg.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/rkg.es.js",
+      "require": "./dist/rkg.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && yarn declaration",
+    "declaration": "tsc --emitDeclarationOnly",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "@vitejs/plugin-react": "^1.0.7",
+    "path": "^0.12.7",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2"
+  }
+}
